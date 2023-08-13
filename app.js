@@ -1,8 +1,8 @@
 require('dotenv').config();
+var sslRedirect = require('heroku-ssl-redirect').default;
 const express = require("express");
 const bodyParser = require("body-parser");
 const Mailjet = require("node-mailjet");
-var sslRedirect = require('heroku-ssl-redirect').default;
 const app = express();
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
