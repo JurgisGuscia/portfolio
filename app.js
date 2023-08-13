@@ -42,10 +42,10 @@ app.post("/", (req, res)=>{
 
     request
         .then((result) => {
-            res.redirect("/activeReturns")
+            res.redirect("/")
         })
         .catch((err) => {
-            res.redirect("/activeReturns")
+            res.redirect("/")
         })
 })
 
