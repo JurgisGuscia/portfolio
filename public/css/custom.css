@@ -301,13 +301,6 @@ footer{
   transition: ease-in-out 0.1s;
 }
 /* smaller resolutions devices that don't fit full page */
-@media (1000px<width<1500px){
-  body{
-    width: 1000px;
-    margin: auto;
-  }
-}
-
 @media (width<1000px){
   *{
     margin: 0px;
@@ -317,6 +310,7 @@ footer{
     width: 500px;
     padding: 0px;
     margin: 0px;
+    margin: auto;
 }
   .mainPageContainer{
     min-width: 100vw;
