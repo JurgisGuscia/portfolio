@@ -431,8 +431,10 @@ footer{
 .projectsPage{
   width: 500px;
   height: 500px;
+  margin: auto;
   margin-top: 300px;
   vertical-align: top;
+  
 }
 .projectsTitle{
   width: 500px;
@@ -472,8 +474,13 @@ footer{
   height: 350px;
   margin-top: 20px;
 }
-}
-/* phones */
-/* @media (width<600px){
+.connectPage{
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  margin-top: 300px;
+  vertical-align: top;
   
-}   */
+
+}
+}
