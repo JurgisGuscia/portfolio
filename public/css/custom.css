@@ -153,7 +153,6 @@ body::-webkit-scrollbar {
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
-   
     padding-left: 600px;
   }
   .skillList{
@@ -301,6 +300,180 @@ footer{
   -moz-box-shadow: 1px 1px 16px 0px rgba(255,255,255,0.75);
   transition: ease-in-out 0.1s;
 }
+/* smaller resolutions devices that don't fit full page */
+@media (width<1000px){
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .mainPageContainer{
+    min-width: 100vw;
+  }
+  .deerImageContainer{
+    position:absolute;
+    display: none;
+  }
+  .skillsPage, .projectsPage, .connectPage{
+    background: none;
+  }
+  .skillsPage{
+    width: 500px;
+    margin: auto;
+    background-color: rgba(25, 25, 25, 0.3);
+  }
+  .skillsTitle{
+    width: 400px;
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight: bold;
+    margin: auto;
+    padding: 0px;
+  }
+  .skillsSubTitle{
+    width: 400px;
+    color: white;
+    margin:auto;
+    height: 20px;
+    padding: 0px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: grey;
+  }
+  .skillsContainer{
+    width: 360px;
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0px;
+    margin: auto;
+  }
+  .skillList{
+    display: inline-block;
+    width: 100px;
+    height: 180px;
+    margin-top: 30px;
+    padding: 10px;
+    vertical-align: top;
+  }
+  .skillListTitle{
+    color: grey;
+    margin-bottom: 10px;
+  }
+  .listOfSkills{
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    color: white;
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .listOfSkills img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    filter: invert(1);
+  }
+  .listOfSkillsItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    position:fixed;
+    min-width: 550px;
+    height: 60px;
+    background: url("../img/bg.bmp");
+    z-index: 30;
+}
+  .navBar{
+    list-style: none;
+    text-decoration: none;
+    cursor: default;
+  }
 
+  .homePage{
+    text-align: center;
+    width: 500px;;
+    height: 300px;
+    vertical-align: top;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+.introContainer{
+    height: 100px;
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
+.introTitle{
+    margin-top: 10px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.intro{
+    color: grey;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    padding: 5px;
+}
+
+.projectsPage{
+  width: 500px;
+  height: 500px;
+  margin-top: 300px;
+  vertical-align: top;
+}
+.projectsTitle{
+  width: 500px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+  font-weight: bold;
+  display: block;
+}
+.projectsContent{
+  display: block;
+  width: 500px;
+  border-radius: 10px;
+  height: 400px;
+  margin-top: 50px;
+  border: none;
+}
+.connectTitle{
+  padding: 0px;
+  color: white;
+  height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+  font-weight: bold;
+  display: block;
+  width: 500px;
+  margin-left: 0px;
+  padding-top:8px;
+}
+.connectContent{
+  display: block;
+  width: 500px;
+  margin-left: 0px;
+  height: 350px;
+  margin-top: 20px;
+}
+}
+/* phones */
+/* @media (width<600px){
   
-  
+}   */
